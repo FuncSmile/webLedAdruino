@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+:root {
+    ---secondary: #AFDDFF;
+}
+
+*, html {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: 'Titilium Web', sans-serif;
+    cursor: url('assets/cursor.png'), auto;
+}
+
+main {
+    position: relative;
+    max-width: 476px;
+    border: 1px solid black;
+    margin: 0 auto;
+    height: 100vh;
+
+}
+
+.header {
+    width: 100%;
+    padding: 32px;
+    background-color: #60B5FF;
+}
+
+.header h1{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh -  190px);
+    overflow-y: scroll;
+    padding: 24px;
+    gap: 16px;
+    /* background-color: #a8b7c4; */
+}
+.leds {
+    display:  grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+
+}
+
+.header-pages {
+    text-align: center;
+    font-weight: 900;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999;
+}
+
+.led {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999;
+}
+
+.item-img{
+    width: 50%;
+}
+
+.led-img{
+    width: 100px;
+    object-fit: cover;
+}
+
+.location {
+    font-size: medium;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    /* color: #60B5FF; */
+    text-align: center;
+}
+
+.item-submit, .led-submit {
+    width: 100%;
+    padding: 8px 0px;
+    background-color: var(---secondary);
+    border: none;
+    font-size: x-large;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.item-submit-active{
+    background-color: red;
+}
+
+
+.navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #60B5FF;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    padding: 24px 0px;
+}
+
+.navigation ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+    display: block;
+}
+
+.navigation ul li a:hover {
+    transition: all 0.5s ease-in-out;
+    scale: 150%;
+}
